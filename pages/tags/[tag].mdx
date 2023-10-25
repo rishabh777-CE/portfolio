@@ -1,0 +1,13 @@
+---
+type: tag
+title: Tagged Projects
+---
+
+import { useRouter } from 'next/router'
+
+export const TagName = () => {
+  const { tag } = useRouter().query
+  return tag || null
+}
+
+# Projects Tagged with “<TagName/>”
